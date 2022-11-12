@@ -22,7 +22,7 @@ fun main() {
     }
 
 
-    // Calculate Calories Consumed Using the Food Class (STILL NEEDED!)
+    // Calculate Calories Consumed Using the Food Class
 
     do {
         val FD = Food()
