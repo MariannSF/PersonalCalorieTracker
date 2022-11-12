@@ -1,13 +1,14 @@
 /* The food class maps food items to the calories they contain and to the number of 
  * servings the person consumed of it
  */
-class food() {
+class Food{
 
     // A dictionary that maps food items to the calories they contain (Maggie)
-    var foodItemToCalories: Map<String, Int> = mapOf<String, Int>  (
-        "Eggs (Serving Size: 1)" to 78,
-        "White Bread (Serving Size: 30 g)" to 80,
-        "Milk (Serving Size: 1 cup)" to 103
+    //Changed to mutable types since want to expand map (Mariann)
+    val foodItemToCalories: MutableMap<String, Int> = mutableMapOf<String, Int>  (
+        "Eggs" to 78,
+        "White Bread" to 80,
+        "Milk" to 103
     )
 
 
