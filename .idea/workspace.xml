@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ea17c95-2e15-4a7a-8321-863fd894e905" name="Changes" comment="I created the NetCalories Class which is done mostly but needs to be connected to the dictionary. Once the dictionary is connected some input can be replaced from dictionary values instead of user input." />
+    <list default="true" id="5ea17c95-2e15-4a7a-8321-863fd894e905" name="Changes" comment="I created the NetCalories Class which is done mostly but needs to be connected to the dictionary. Once the dictionary is connected some input can be replaced from dictionary values instead of user input.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/NetCalories.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/NetCalories.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669079683883</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="I created the NetCalories Class which is done mostly but needs to be connected to the dictionary. Once the dictionary is connected some input can be replaced from dictionary values instead of user input.">
+      <created>1669079792188</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669079792188</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
