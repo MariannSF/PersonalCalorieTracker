@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ea17c95-2e15-4a7a-8321-863fd894e905" name="Changes" comment="added BMI calculation and Class&#10;also Calculate Calories Consumed Using" />
+    <list default="true" id="5ea17c95-2e15-4a7a-8321-863fd894e905" name="Changes" comment="added BMI calculation and Class&#10;also Calculate Calories Consumed Using">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/NetCalories.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +42,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/maria/IdeaProjects/SPL_Project&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hayde\OneDrive\Documents\Term folder not empty\src\main\kotlin" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
