@@ -5,7 +5,7 @@
 import java.util.concurrent.TimeUnit
 
 class NetCalories {
-
+//Hayden Callitsis
     var caloriesGainedFood = readLine()!!.toDouble()
     val caloriesLostExercising = readLine()!!.toDouble()
     var timeSpentExercising = readLine()!!.toLong()
