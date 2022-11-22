@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ea17c95-2e15-4a7a-8321-863fd894e905" name="Changes" comment="added BMI calculation and Class&#10;also Calculate Calories Consumed Using">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/NetCalories.kt" afterDir="false" />
-    </list>
+    <list default="true" id="5ea17c95-2e15-4a7a-8321-863fd894e905" name="Changes" comment="I created the NetCalories Class which is done mostly but needs to be connected to the dictionary. Once the dictionary is connected some input can be replaced from dictionary values instead of user input." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668218847276</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I created the NetCalories Class which is done mostly but needs to be connected to the dictionary. Once the dictionary is connected some input can be replaced from dictionary values instead of user input.">
+      <created>1669079683883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669079683883</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added BMI calculation and Class&#10;also Calculate Calories Consumed Using" />
-    <option name="LAST_COMMIT_MESSAGE" value="added BMI calculation and Class&#10;also Calculate Calories Consumed Using" />
+    <MESSAGE value="I created the NetCalories Class which is done mostly but needs to be connected to the dictionary. Once the dictionary is connected some input can be replaced from dictionary values instead of user input." />
+    <option name="LAST_COMMIT_MESSAGE" value="I created the NetCalories Class which is done mostly but needs to be connected to the dictionary. Once the dictionary is connected some input can be replaced from dictionary values instead of user input." />
   </component>
 </project>
