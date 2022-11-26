@@ -8,16 +8,16 @@ class Exercise {
     // (Maggie)
     val exerciseToCaloriesPerHour: Map<String, Int> = mapOf<String, Int>  (
         "Push ups" to 420,
-        "Running (5 mph)" to 606,
-        "Walking (3.5 mph)" to 314,
+        "Running" to 606,
+        "Walking" to 314,
         "Hiking" to 438,
-        "Swimming laps, light to moderate" to 423,
-        "Low-impact aerobics" to 365,
+        "Swimming" to 423,
+        "Aerobics" to 365,
         "Water aerobics" to 402,
-        "Bicycling < 10 mph" to 292,
-        "Elliptical Trainer (moderate effort)" to 365,
-        "Downhill Skiing" to 314,
-        "Golfing/Carrying Clubs" to 314,
+        "Bicycling" to 292,
+        "Elliptical Trainer" to 365,
+        "Skiing" to 314,
+        "Golfing" to 314,
     )
 
     // a dictionary that maps exercise type to # of hours exercised (Maggie)
