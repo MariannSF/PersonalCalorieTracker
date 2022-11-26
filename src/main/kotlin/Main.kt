@@ -27,7 +27,21 @@ fun main() {
 
     do {
         val FD = Food()
-        println("Enter Food item consumed: ")
+
+        //Here I'm going to give the user a list of foods that they can choose. -Michael J
+        println("List of Food:\n")
+        var foodMap = FD.foodItemToCalories
+        var foodList = foodMap.keys
+
+        //Initialize an iterator to traverse the key values of foodItemToCalories map, and traverse list. -Michael J
+        val foodIterator = foodList.iterator()
+        while(foodIterator.hasNext()) {
+            var nextFood = foodIterator.next()
+            println(nextFood + ", calories per serving " + foodMap[nextFood])
+        }
+
+
+        println("\nEnter Food item consumed: ")
         var fdItem = readLine()
         println("Enter the serving size consumed: ")
         var servingS = readLine()!!.toInt()

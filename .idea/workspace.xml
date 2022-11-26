@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ea17c95-2e15-4a7a-8321-863fd894e905" name="Changes" comment="added BMI calculation and Class&#10;also Calculate Calories Consumed Using">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bmi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bmi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Exercise.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Exercise.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
