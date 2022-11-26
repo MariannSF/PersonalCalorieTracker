@@ -1,3 +1,5 @@
+import kotlin.math.roundToInt
+
 fun main() {
 
     // variable for calories consumed (Maggie)
@@ -5,9 +7,8 @@ fun main() {
     // variable for calories burned (Maggie)
     var caloriesBurned = 0
     // variable for user's calorie burning goal (Maggie)
-    var goal = 0
     // variable for calories still to be burned (Maggie)
-    var caloriesToGo = 0
+    val caloriesToGo: Int
     // variable for BMI (Maggie)
     var bMI = 0.0
 
@@ -60,7 +61,49 @@ fun main() {
     } while (it.equals('y'.toString(), true))
 
 
-    // Calculate Calories Burned Using the Excercise Class (STILL NEEDED!)
+    // Calculate Calories Burned Using the Exercise Class (Anas)
+    val exercise = Exercise()
+
+    do {
+        println(
+            "What exercise did you do from the following list?:\n" +
+                    "   Push ups\n" +
+                    "   Running\n" +
+                    "   Walking\n" +
+                    "   Hiking\n" +
+                    "   Swimming\n" +
+                    "   Aerobics\n" +
+                    "   Water aerobics\n" +
+                    "   Bicycling\n" +
+                    "   Elliptical Trainer\n" +
+                    "   Skiing\n" +
+                    "   Golfing"
+        )
+
+        var userExercise = readLine()
+
+        while(!exercise.exerciseToCaloriesPerHour.containsKey(userExercise)) {
+            println("This exercise is not in the list. Please try again: ")
+            userExercise = readLine()
+        }
+
+        var exerciseCal = exercise.exerciseToCaloriesPerHour[userExercise]!!
+
+        println("How many hours did you spend doing this exercise? ")
+        var hours = readLine()!!.toDouble()
+
+        caloriesBurned += (exerciseCal * hours).roundToInt()
+
+        println("Do you want to add another exercise? Y/N")
+        val cont = readLine()
+        var char = cont?.subSequence(0, 1)
+        var it = ""
+        if (char?.count() == 1) {
+            it = char[0].toString()
+        }
+    } while(it.equals('y'.toString(), true))
+
+    println("Total calories burned: $caloriesBurned")
 
     // Calculate BMI Using the as of now, non-existant BMI Class (STILL NEEDED!)
 
@@ -91,7 +134,7 @@ fun main() {
     // Allows users to set calorie goals (Maggie)
     println("Enter your calorie goal: ")
     // Setting user's calorie goal to their input (Maggie)
-    goal = (readLine()?.toDoubleOrNull() ?: error("enter a number")).toInt()
+    val goal = (readLine()?.toDoubleOrNull() ?: error("enter a number")).toInt()
     // Printing the user's calorie goal, so they can see it went through (Maggie)
     println("Your goal is " + goal + "!")
 
@@ -108,12 +151,10 @@ fun main() {
 
     // printing appropriate messages to the user depending on whether they met their
     // calorie burning goals or not (Maggie)
-    if (caloriesBurned == goal) {
+    if (caloriesBurned >= goal) {
         println("Congratulations! You Met Your Calorie Burning Goal!!!")
     } else {
         println("You Have Not Met Your Calorie Burning Goal Yet.")
-        println("You Must Burn " + caloriesToGo + " Calories To Meet Your Goal!!!")
+        println("You Must Burn $caloriesToGo Calories To Meet Your Goal!!!")
     }
-
-
 }
