@@ -1,4 +1,5 @@
 import kotlin.math.roundToInt
+import javax.swing.*;
 
 fun main() {
 
@@ -26,12 +27,17 @@ fun main() {
     // Calculate Calories Consumed Using the Food Class
 
     do {
+
+
+
         val FD = Food()
 
         //Here I'm going to give the user a list of foods that they can choose. -Michael J
         println("List of Food:\n")
         var foodMap = FD.foodItemToCalories
         var foodList = foodMap.keys
+
+
 
         //Initialize an iterator to traverse the key values of foodItemToCalories map, and traverse list. -Michael J
         val foodIterator = foodList.iterator()
@@ -41,12 +47,15 @@ fun main() {
         }
 
 
+
+        //Accepting user input for food item and serving size.
+        // Displaying  calories consumed based on user input -Mariann F
         println("\nEnter Food item consumed: ")
         var fdItem = readLine()
         println("Enter the serving size consumed: ")
         var servingS = readLine()!!.toInt()
 
-        //If food item does not exist in Food map adding a new food item specified by user
+        //If food item does not exist in Food map adding a new food item specified by user. -Mariann F
         if (FD.foodItemToCalories.get(fdItem) == null){
             println("This food item does not exist yet! Enter the calorie per serving size")
             val itemCalorie = readLine()!!.toInt()
@@ -65,6 +74,7 @@ fun main() {
         println("You ate " +servingS +" servings of "+ fdItem + " which adds " + tCalPerFood + " calories to your total daily calories consumed")
 
 
+        //Allowing user to enter additional food items consumed
         println("Do you want to add another item consumed? Y/N")
         val cont = readLine()
         var char = cont?.subSequence(0, 1)
@@ -119,7 +129,7 @@ fun main() {
 
     println("Total calories burned: $caloriesBurned")
 
-    // Calculate BMI Using the as of now, non-existant BMI Class (STILL NEEDED!)
+    // Accepting user input and passing to Bmi Class for calculating bmi and return results. -Mariann F
 
     println("Enter your weight in pounds: ")
     var userInputW = readLine()?.toDoubleOrNull() ?: error("enter a number")

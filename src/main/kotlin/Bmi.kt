@@ -1,5 +1,5 @@
 import java.lang.ArithmeticException
-
+// Class for calculating bmi and categorizing bmi results. -Mariann F
 class Bmi {
 
 
