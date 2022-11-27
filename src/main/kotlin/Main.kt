@@ -51,7 +51,8 @@ fun main() {
         //Accepting user input for food item and serving size.
         // Displaying  calories consumed based on user input -Mariann F
         println("\nEnter Food item consumed: ")
-        var fdItem = readLine()
+        var fdItemRaw = readLine()
+        var fdItem = fdItemRaw?.uppercase()
         println("Enter the serving size consumed: ")
         var servingS = readLine()!!.toInt()
 

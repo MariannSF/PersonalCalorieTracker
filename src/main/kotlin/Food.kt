@@ -6,9 +6,9 @@ class Food{
     // A dictionary that maps food items to the calories they contain (Maggie)
     //Changed to mutable types since want to expand map (Mariann)
     val foodItemToCalories: MutableMap<String, Int> = mutableMapOf<String, Int>  (
-        "Eggs" to 78,
-        "White Bread" to 80,
-        "Milk" to 103
+        "EGGS" to 78,
+        "WHITE BREAD" to 80,
+        "MILK" to 103
     )
 
 
