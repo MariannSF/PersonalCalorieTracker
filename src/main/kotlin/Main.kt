@@ -1,71 +1,71 @@
 import java.lang.NumberFormatException
 import kotlin.math.roundToInt
-import javax.swing.*;
+import javax.swing.*
 
 fun main() {
-    val user1 = User("");
-    var input = "";
+    val user1 = User("")
+    var input = ""
 
     //User login(James)
     while(user1.password.isBlank()) {   //Run as long as a correct password isn't entered
-        print("Please enter your username: ");
-        user1.username = readln();
+        print("Please enter your username: ")
+        user1.username = readln()
 
         while (user1.username.isBlank()) {  //Runs until a non-blank string is input
-            print("Invalid input, please try entering you username again:");
-            user1.username = readln();
+            print("Invalid input, please try entering you username again:")
+            user1.username = readln()
         }
         if (user1.loadFile()) {             //Checks if userdata exists
-            print("User \"" + user1.username + "\" found! Would you like to login?(Y/N): ");
+            print("User \"" + user1.username + "\" found! Would you like to login?(Y/N): ")
             input = readln()
             if (input.uppercase() == "Y") {     //User wants to log in
-                print("Please enter your password: ");
+                print("Please enter your password: ")
                 if (readln() == user1.password) //Successful login
-                    break;
+                    break
                 else {                          //Unsuccessful login
-                    println("Password incorrect! Please try again...");
-                    user1.password = "";
+                    println("Password incorrect! Please try again...")
+                    user1.password = ""
                 }
             } else if (input.uppercase() == "N") {  //User does not want to log in
-                println("Returning to username entry...");
-                user1.password = "";
+                println("Returning to username entry...")
+                user1.password = ""
             } else                                  //Invalid input
-                println("Invalid input detected! Defaulting to N");
+                println("Invalid input detected! Defaulting to N")
         } else {                                    //User data not found
             print("User \"" + user1.username + "\" not found...\n" +
-                    "Would you like to create an account with this username?(Y/N): ");
+                    "Would you like to create an account with this username?(Y/N): ")
             input = readln()
 
             if (input.uppercase() == "Y") { //Account creation
                 while(user1.password.isBlank()) {
-                    print("Please enter your password: ");
-                    user1.password = readln();
+                    print("Please enter your password: ")
+                    user1.password = readln()
                 }
                 while(user1.name.isBlank()) {
-                    print("Please enter your name: ");
-                    user1.name = readln();
+                    print("Please enter your name: ")
+                    user1.name = readln()
                 }
                 while(user1.userHeight == 0.0) {
-                    print("Please enter your height in inches: ");
+                    print("Please enter your height in inches: ")
                     try {
-                        user1.userHeight = readLine()!!.toDouble();
+                        user1.userHeight = readLine()!!.toDouble()
                     } catch (e: NumberFormatException) {
-                        println("Invalid input! Please try again");
+                        println("Invalid input! Please try again")
                     }
                 }
                 while(user1.userWeight == 0.0) {
-                    print("Please enter your weight in pounds: ");
+                    print("Please enter your weight in pounds: ")
                     try {
-                        user1.userWeight = readLine()!!.toDouble();
+                        user1.userWeight = readLine()!!.toDouble()
                     } catch (e: NumberFormatException) {
-                        println("Invalid input! Please try again");
+                        println("Invalid input! Please try again")
                     }
                 }
 
             } else if (input.uppercase() == "N")
-                println("Returning to username entry...");
+                println("Returning to username entry...")
             else
-                println("Invalid input detected! Defaulting to N");
+                println("Invalid input detected! Defaulting to N")
         }
     }
 
@@ -79,7 +79,7 @@ fun main() {
                     "[4] Close program"
         )
         print("Select an option: ")
-        input = readln();
+        input = readln()
         when (input) {
             "1" -> { // Calculate Calories Consumed Using the Food Class
                 do {
